@@ -12,5 +12,5 @@ jobs:
           node-version: 20
       - name: Install Deps
         run: npm ci
-      - name: Lint
+      - name: lint
         run: npm run lint
