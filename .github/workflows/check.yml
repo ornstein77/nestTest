@@ -31,3 +31,8 @@ jobs:
         run: npm ci
       - name: test
         run: npm run test
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo secrets
+        run: echo ${{ secrets.TEST_SECRET }}
